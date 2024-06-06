@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "lib": ["ES2015"] // or "ES6", "ES2017", "ESNext", depending on your needs
+  }
+}

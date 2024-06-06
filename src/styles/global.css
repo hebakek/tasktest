@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary Color Shades */
+  --color-primary-100: #1a232b;
+  --color-primary-50: #2e3944;
+  --color-primary-200: #161d24;
+  --color-primary-300: #171c21;
+  --color-primary-400: #07121d;
+
+  /* Secondary Color Shades */
+  --color-secondary-50: #f8a978;
+  --color-secondary-100: #f37b20;
+  --color-secondary-200: #c1661a;
+  --color-secondary-10: rgba(243, 124, 32, 0.3);
+
+  /* Text Color */
+  --color-text: #ffffff;
+  --color-text-secondary: #b3b3b3;
+
+  /* Background Colors */
+  --color-background: #1a232b;
+  --color-background-light: #2e3944;
+
+  /* Error Colors */
+  --color-error-light: #f8d7da;
+  --color-error: #dc3545;
+  --color-error-dark: #c82333;
+
+  /* Success Colors */
+  --color-success-light: #d4edda;
+  --color-success: #28a745;
+  --color-success-dark: #218838;
+
+  --color-accent-1: #17a2b8;
+  --color-accent-2: #ffc107;
+
+  /* Utility Colors */
+  --backdrop-color: rgba(0, 0, 0, 0.3);
+  --image-grayscale: 10%;
+  --image-opacity: 90%;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+  /* Border Radius */
+  --radius-sm: 3px;
+  --radius-ss: 4px;
+  --radius-md: 6px;
+  --radius-lg: 9px;
+  --radius-xlg: 12px;
+
+  --gradient-primary: linear-gradient(
+    to right,
+    var(--color-primary-50),
+    var(--color-primary-100),
+    var(--color-primary-200)
+  );
+  --gradient-primary-background: linear-gradient(
+    to bottom,
+    var(--color-primary-50)
+  );
+  --gradient-secondary: linear-gradient(to right, var(--color-secondary-50));
+}
+@keyframes gradient-animation-background {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+html {
+}
+.text-gradient {
+  letter-spacing: 0.5px;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(
+    108deg,
+    #b16cea 14%,
+    #ff5e69 57%,
+    #ff8a56 81%,
+    #ffa84b
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 110%;
+  transition: background-position 2s;
+  display: inline;
+}
+body {
+  background-color: #1a232b;
+}
+section {
+  padding: 2rem;
+}
